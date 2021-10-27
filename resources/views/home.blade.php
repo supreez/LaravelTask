@@ -17,9 +17,20 @@
 
     <body>
 
-        <div>
+            
+            <div class="row justify-content-center">
 
-            <h1>Collage generator</h1>
+                <div class="col-4 align-middle m-5">
+
+                    <div class="row">
+
+                        <button type="button" class="btn btn-dark">Generate collage</button> 
+                    
+                    </div>
+
+                </div>
+
+            </div>
 
             <div class="row">
 
@@ -40,8 +51,7 @@
                @endfor    
                     
             </div> 
-
-        </div>
+            
 
     </body>
 
