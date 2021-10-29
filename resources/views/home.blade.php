@@ -23,7 +23,7 @@
 
                 <div class="row">
                     
-                    <a href='/test' class="btn btn-dark">Generate collage</a> 
+                    <a href='/generateCollage' class="btn btn-dark">Generate collage</a> 
                     
                 </div>
 
@@ -33,24 +33,22 @@
 
         <div class="row">
 
-           @for ($i = 1; $i <= 5; $i++)
+            @for ($i = 1; $i <= 10; $i++)
 
                 @include('picture._picture')
 
-           @endfor    
-                    
-        </div> 
+                @if ($i == 5)
 
-        <div class="row">
+                    </div>
 
-           @for ($i = 6; $i <= 10; $i++)
+                    <div class="row">
 
-                @include('picture._picture')
+                @endif
 
-           @endfor    
-                    
-        </div> 
+            @endfor    
             
+        </div>
+
     </body>
 
 </html>
