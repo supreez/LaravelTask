@@ -16,43 +16,41 @@
     </head>
 
     <body>
+    
+        <div class="row justify-content-center">
 
-            
-            <div class="row justify-content-center">
+            <div class="col-4 align-middle m-5">
 
-                <div class="col-4 align-middle m-5">
-
-                    <div class="row">
-
-                        <button type="button" class="btn btn-dark">Generate collage</button> 
+                <div class="row">
                     
-                    </div>
-
+                    <a href='/test' class="btn btn-dark">Generate collage</a> 
+                    
                 </div>
 
             </div>
 
-            <div class="row">
+        </div>
 
-               @for ($i = 1; $i <= 5; $i++)
+        <div class="row">
 
-                    @include('picture._picture')
+           @for ($i = 1; $i <= 5; $i++)
 
-               @endfor    
+                @include('picture._picture')
+
+           @endfor    
                     
-            </div> 
+        </div> 
 
-            <div class="row">
+        <div class="row">
 
-               @for ($i = 6; $i <= 10; $i++)
+           @for ($i = 6; $i <= 10; $i++)
 
-                    @include('picture._picture')
+                @include('picture._picture')
 
-               @endfor    
+           @endfor    
                     
-            </div> 
+        </div> 
             
-
     </body>
 
 </html>
